@@ -2,12 +2,13 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-
 import "./styles/Navbar.css";
 
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
+// @ts-ignore
+gsap.registerPlugin(ScrollTrigger, (window as any).ScrollSmoother);
+export let smoother: any;
+
+const ScrollSmoother = (window as any).ScrollSmoother;
 
 const Navbar = () => {
   useEffect(() => {

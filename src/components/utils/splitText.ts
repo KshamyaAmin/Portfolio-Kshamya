@@ -1,18 +1,19 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { SplitText } from "gsap/SplitText";
 
 interface ParaElement extends HTMLElement {
   anim?: gsap.core.Animation;
-  split?: SplitText;
+  split?: any;
 }
 
 try {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+  // @ts-ignore
+  gsap.registerPlugin(ScrollTrigger, window.ScrollSmoother, window.SplitText);
 } catch (e) {
   console.warn("GSAP Plugins (Trial) could not be registered on this domain.");
 }
+
+const SplitText = (window as any).SplitText;
 
 export default function setSplitText() {
   ScrollTrigger.config({ ignoreMobileResize: true });
