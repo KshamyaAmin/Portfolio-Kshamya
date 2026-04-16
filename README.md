@@ -15,7 +15,7 @@ Please do NOT:
 - Use this project for commercial/client work
 - Create tutorials or content using this exact project
 
-— Vedansh Harish Ail
+— KSHAMYAAMIN
 
 ---
 

@@ -10,20 +10,8 @@ const projects = [
   {
     name: "Meri Panchayat Portal",
     category: "FullStack App",
-    tools: "Python, Flask, SQLite, HTML/CSS",
+    tools: "Python (Flask), SQLite, OTP, RBAC",
     image: "/images/panchayat.png",
-  },
-  {
-    name: "Delivery Time Prediction",
-    category: "Machine Learning",
-    tools: "Python, Regression Algorithms",
-    image: "/images/placeholder.webp",
-  },
-  {
-    name: "News Website Scraper",
-    category: "Web Scraping",
-    tools: "Python, BeautifulSoup, Pandas",
-    image: "/images/news.png",
   },
   {
     name: "Smart Recipe Generator",
@@ -32,9 +20,15 @@ const projects = [
     image: "/images/smart.png",
   },
   {
-    name: "Java Quiz App",
+    name: "Tetris Game",
+    category: "Game Dev",
+    tools: "Python, Pygame",
+    image: "/images/placeholder.webp",
+  },
+  {
+    name: "Book Store Billing System",
     category: "Desktop App",
-    tools: "Java, Swing, Object-Oriented",
+    tools: "Java, Swing",
     image: "/images/placeholder.webp",
   },
 ];

@@ -90,17 +90,17 @@ const WhatIDo = () => {
               <h3>FULL STACK</h3>
               <h4>Description</h4>
               <p>
-                Building scalable web applications and data-driven solutions using modern programming languages and frameworks.
+                Building responsive web applications and data-driven solutions with a strong foundation in core programming and web technologies.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Python</div>
                 <div className="what-tags">Java</div>
-                <div className="what-tags">JavaScript</div>
                 <div className="what-tags">HTML / CSS</div>
                 <div className="what-tags">SQL</div>
                 <div className="what-tags">C</div>
                 <div className="what-tags">Flask</div>
+                <div className="what-tags">JavaScript</div>
                 <div className="what-tags">SQLite</div>
               </div>
               <div className="what-arrow"></div>
@@ -128,16 +128,16 @@ const WhatIDo = () => {
               <h3>TOOLS & TECH</h3>
               <h4>Description</h4>
               <p>
-                Utilizing industry-standard tools to organize, design, and manage software development workflows effectively.
+                Proficient in industry-standard development and communication tools to enhance productivity and project management.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Canva</div>
-                <div className="what-tags">MS Office</div>
                 <div className="what-tags">VS Code</div>
                 <div className="what-tags">PyCharm</div>
-                <div className="what-tags">UI Design</div>
-                <div className="what-tags">Video Editing</div>
+                <div className="what-tags">Canva</div>
+                <div className="what-tags">MS Office</div>
+                <div className="what-tags">Problem Solving</div>
+                <div className="what-tags">Communication</div>
               </div>
               <div className="what-arrow"></div>
             </div>

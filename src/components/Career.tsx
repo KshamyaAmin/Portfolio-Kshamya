@@ -15,37 +15,49 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Bachelor of Computer Applications</h4>
-                <h5>Dr PDP-PSP GFGC</h5>
+                <h4>Bachelor of Science (Computer Science & Mathematics)</h4>
+                <h5>University College, Mangaluru</h5>
               </div>
               <h3>2024</h3>
             </div>
             <p>
-              Developed strong foundational computer science skills. Graduated with a 7.87 CGPA, and completed a Machine Learning–based food delivery time prediction system as my final project.
+              Successfully completed BSc with a CGPA of 9.02.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Web Dev & Design Intern</h4>
+                <h4>Web Development Intern</h4>
+                <h5>Prodigy InfoTech</h5>
+              </div>
+              <h3>2025</h3>
+            </div>
+            <p>
+              Developed responsive web pages using HTML, CSS, JavaScript. Improved debugging and problem-solving skills.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Web Development Intern</h4>
                 <h5>Oasis Infobyte</h5>
               </div>
               <h3>2025</h3>
             </div>
             <p>
-              Collaborated to build responsive web interfaces for internal tools. Optimized DOM updates, refactored code, and integrated Python scripts to automate regression testing.
+              Designed responsive UI and worked on real-world tasks.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Master of Computer Applications</h4>
-                <h5>St. Agnes College</h5>
+                <h4>Master of Computer Applications (MCA)</h4>
+                <h5>St. Agnes College (Autonomous), Mangaluru</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Specializing in advanced software engineering and data analytics. Built complex scalable applications including a full-stack public issue reporting portal with RBAC and email integrations.
+              Currently pursuing MCA with a CGPA of 8.59. Presented a research paper on "Balancing Coaching Culture and Parenting Pressures" at the college level.
             </p>
           </div>
         </div>
