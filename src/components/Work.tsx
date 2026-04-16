@@ -23,13 +23,13 @@ const projects = [
     name: "Tetris Game",
     category: "Game Dev",
     tools: "Python, Pygame",
-    image: "/images/placeholder.webp",
+    image: "/images/tetris.png",
   },
   {
     name: "Book Store Billing System",
     category: "Desktop App",
     tools: "Java, Swing",
-    image: "/images/placeholder.webp",
+    image: "/images/bookstore.png",
   },
 ];
 
