@@ -63,9 +63,9 @@ export function initialFX() {
   } catch (e) {
     console.warn("GSAP SplitText (Trial) failed in initialFX. Site content will remain visible without text split animations.");
     
-    // Fallback: Just fade in the main containers that would have been split
+    // Fallback: Fade in the main text containers
     gsap.fromTo(
-      [".landing-info h3", ".landing-intro h2", ".landing-intro h1", ".landing-h2-info"],
+      [".landing-info h3", ".landing-intro h2", ".landing-intro h1"],
       { opacity: 0, y: 30 },
       {
         opacity: 1,
@@ -76,6 +76,16 @@ export function initialFX() {
         delay: 0.3,
       }
     );
+
+    // Fallback: Show primary text, hide duplicates, then cycle with simple opacity animation
+    gsap.set(".landing-h2-1", { opacity: 1 });
+    gsap.set(".landing-h2-2", { opacity: 0 });
+    gsap.set(".landing-h2-info", { opacity: 1 });
+    gsap.set(".landing-h2-info-1", { opacity: 0 });
+
+    // Simple text cycling without SplitText
+    LoopTextSimple(".landing-h2-1", ".landing-h2-2");
+    LoopTextSimple(".landing-h2-info", ".landing-h2-info-1");
   }
 
   gsap.fromTo(
@@ -153,5 +163,48 @@ function LoopText(Text1: any, Text2: any) {
         delay: delay2,
       },
       1
+    );
+}
+
+function LoopTextSimple(selector1: string, selector2: string) {
+  const tl = gsap.timeline({ repeat: -1 });
+  const showDuration = 4;
+  const fadeDuration = 1;
+
+  tl.to(selector1, {
+    opacity: 0,
+    y: -30,
+    duration: fadeDuration,
+    ease: "power3.inOut",
+    delay: showDuration,
+  })
+    .fromTo(
+      selector2,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: fadeDuration,
+        ease: "power3.inOut",
+      },
+      "<"
+    )
+    .to(selector2, {
+      opacity: 0,
+      y: -30,
+      duration: fadeDuration,
+      ease: "power3.inOut",
+      delay: showDuration,
+    })
+    .fromTo(
+      selector1,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: fadeDuration,
+        ease: "power3.inOut",
+      },
+      "<"
     );
 }
