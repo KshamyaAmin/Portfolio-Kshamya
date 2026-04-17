@@ -81,3 +81,24 @@
     font-size: 18px;
   }
 }
+
+/* Resume button */
+.navbar-resume-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1.5px solid #c481ff;
+  border-radius: 6px;
+  color: #c481ff;
+  font-size: inherit;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  white-space: nowrap;
+}
+.navbar-resume-btn:hover {
+  background: #c481ff;
+  color: #0b080c;
+  box-shadow: 0 0 18px rgba(196, 129, 255, 0.45);
+}
